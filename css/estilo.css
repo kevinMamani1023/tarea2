@@ -1,0 +1,62 @@
+.principal
+ {
+    display: flex;
+    height: 100vh;
+  }
+
+  .particion1
+  {
+    flex:300px;
+    flex-wrap: nowrap;
+    flex-grow: calc(0);
+    background-color: lightgray;
+  }
+
+  .particion2 {
+    flex: 1;
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .particion3
+  {
+    flex: 300px ;
+    flex-wrap: nowrap;
+    flex-grow: calc(0);
+    background-color: lightgray;
+  }
+  .primera-particion {
+    display: flex;
+  }
+  .particion-interna1 {
+    flex: 1;
+    flex-wrap: nowrap;
+    flex-grow: calc(33.33% - 10px);
+    margin: 5px;
+    background-color: red;
+    height: 360px;
+  }
+  .particion-interna2 {
+    flex: 1 0 calc(33.33% - 10px);
+    margin: 5px;
+    background-color: green;
+  }
+
+  .particion-horizontal {
+    display: flex;
+    margin: 5px;
+  }
+
+  .particion-vertical {
+    flex: 1;
+    background-color: yellow;
+    height: 175px;
+  }
+  .particion-interna {
+    flex: content;
+    flex: 1 0 calc(33.33% - 10px);
+    margin: 5px;
+    background-color: yellow;
+    height: 175px;
+  }
